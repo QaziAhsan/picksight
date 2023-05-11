@@ -1,0 +1,22 @@
+body{
+    font-family: 'Nunito', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    color: #1B1B20;
+    line-height: 2;
+}
+.hiw-wrapper{
+    position: relative;
+}
+img.hiw-bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+.mobile-img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
