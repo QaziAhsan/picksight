@@ -20,3 +20,10 @@ img.hiw-bg{
     right: 0;
     bottom: 0;
 }
+img.arrow-bottom {
+    position: absolute;
+    bottom: -270px;
+    left: -80px;
+    z-index: 1;
+    width: 30%;
+}
