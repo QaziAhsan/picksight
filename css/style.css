@@ -40,7 +40,9 @@ img.arrow-bottom {
 .bg-red-400{
     background-color: #FF6D90 !important;
 }
-
+.play-btn img {
+    border-radius: 50%;
+}
 @media(max-width:1500px){
     img.arrow-bottom {
         left: -5%;
@@ -53,18 +55,30 @@ img.arrow-bottom {
     img.arrow-bottom {
         left: -5%;
         width: 300px;
+           bottom: -190px;
     }
     .arrow-bottom.right{
         right: -5%;
+           bottom: -190px;
     }
 }
+@media(max-width:1024px){
+    .hiw-wrapper-main {
+       text-align: center;
+    }
+}
+
 @media(max-width:442px){
     img.arrow-bottom {
         left: -5%;
         width:200px;
+        bottom: -140px;
     }
     .arrow-bottom.right {
         right: -8%;
         bottom: -140px;
+    }
+    footer{
+        text-align: center;
     }
 }
