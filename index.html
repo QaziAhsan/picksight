@@ -16,7 +16,10 @@
       rel="stylesheet"
     />
     <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> -->
-    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <link
+      href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -150,6 +153,59 @@
       </div>
     </nav>
 
+    <!-- Main modal -->
+    <div
+      id="staticModal"
+      data-modal-backdrop="static"
+      tabindex="-1"
+      aria-hidden="true"
+      class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full"
+    >
+      <div class="relative w-full max-w-2xl max-h-full">
+        <!-- Modal content -->
+        <div class="relative bg-white rounded-lg shadow">
+          <!-- Modal header -->
+          <div
+            class="flex items-start justify-between"
+          >
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+              Static modal
+            </h3>
+            <button
+              type="button"
+              class="text-gray-400 bg-transparent text-sm p-1.5 ml-auto inline-flex items-center "
+              data-modal-hide="staticModal"
+            >
+              <svg
+                class="w-5 h-5"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <!-- Modal body -->
+          <div class="p-3 space-y-6">
+            <iframe
+              width="100%"
+              height="315"
+              src="https://www.youtube.com/embed/EoXvnM7nSjI"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <section class="bg-white">
       <div
         class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6"
@@ -171,7 +227,7 @@
             </p>
           </div>
 
-          <div class="flex items-center md:mx-auto">
+          <div class="flex justify-center items-center md:mx-auto md:justify-start">
             <a
               href="#"
               class="inline-flex items-center text-white bg-blue-400 hover:bg-blue-500 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-md px-2 sm:px-5 dark:focus:ring-primary-900"
@@ -191,17 +247,20 @@
               </svg>
               <img class="ml-2" src="img/whatsapp logo.png" alt="" />
             </a>
-            <a
-              href="#"
-              class="inline-flex items-center bg-transparent font-medium rounded-lg text-md px-5 text-center play-btn"
+
+            <button
+              data-modal-target="staticModal"
+              data-modal-toggle="staticModal"
+              class="play-btn font-medium ml-5"
+              type="button"
             >
               <img src="img/Play button.png" alt="" />
               Demo
-            </a>
+            </button>
           </div>
         </div>
         <img
-          class="w-full service-img my-5"
+          class="w-full my-5"
           data-aos="fade-left"
           data-aos-duration="1500"
           src="img/Group 1000003624.png"
@@ -227,7 +286,7 @@
             gallery in under 2 minutes.
           </p>
           <img
-            class="w-full service-img"
+            class="w-full "
             src="img/Group 1000003623.png"
             alt="dashboard image"
           />
@@ -314,7 +373,7 @@
               />
             </div>
             <h3 class="text-2xl font-bold mb-0">Sharing</h3>
-            <p class="text-2xl text-red-400 font-bold">files</p>
+            <p class="text-2xl text-red-400 font-bold">gallery</p>
           </div>
           <div
             class="bg-purple-200 px-5 rounded-2xl service-card"
@@ -551,11 +610,7 @@
         >
           It's all completely <span class="text-yellow-300">free</span>!
         </h1>
-        <img
-          src="img/present gift.png"
-          class="mx-auto mt-10 block md:hidden"
-          alt=""
-        />
+        <img src="img/present gift.png" class="mx-auto mt-10" alt="" />
       </div>
     </section>
 
@@ -717,7 +772,9 @@
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 
     <script>
-  window.addEventListener('load', function() { AOS.init(); });
+      window.addEventListener("load", function () {
+        AOS.init();
+      });
     </script>
   </body>
 </html>
