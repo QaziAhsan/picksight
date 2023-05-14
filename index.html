@@ -62,7 +62,7 @@
                 href="#"
                 class="block py-2 pl-3 pr-4 text-black rounded md:bg-transparent md:text-red-400 md:p-0 md:dark:text-red-400 dark:bg-red-400 md:dark:bg-transparent"
                 aria-current="page"
-                >Home</a
+                >Product</a
               >
             </li>
             <li>
@@ -71,7 +71,7 @@
                 data-dropdown-toggle="dropdownNavbar"
                 class="flex items-center justify-between w-full py-2 pl-3 pr-4 rounded"
               >
-                Dropdown
+                Resources
                 <svg
                   class="w-5 h-5 ml-1"
                   aria-hidden="true"
@@ -155,8 +155,7 @@
 
     <!-- Main modal -->
     <div
-      id="staticModal"
-      data-modal-backdrop="static"
+      id="popup-modal"
       tabindex="-1"
       aria-hidden="true"
       class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full"
@@ -174,7 +173,7 @@
             <button
               type="button"
               class="text-gray-400 bg-transparent text-sm p-1.5 ml-auto inline-flex items-center "
-              data-modal-hide="staticModal"
+              data-modal-hide="popup-modal"
             >
               <svg
                 class="w-5 h-5"
@@ -249,8 +248,8 @@
             </a>
 
             <button
-              data-modal-target="staticModal"
-              data-modal-toggle="staticModal"
+              data-modal-target="popup-modal"
+              data-modal-toggle="popup-modal"
               class="play-btn font-medium ml-5"
               type="button"
             >

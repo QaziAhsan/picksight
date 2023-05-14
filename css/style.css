@@ -55,7 +55,7 @@ img.arrow-bottom {
 .hiw-wrapper p {
     font-size: 20px;
 }
-img.service-img {
+.service-img {
     height: 200px;
     object-fit: contain;
 }
@@ -88,8 +88,8 @@ img.service-img {
      }
 }
 @media(max-width:786px){
-    .service-img{
-        width: 150px;
+    .service-img {
+        height: 100px;
     }
     .service-card {
         width: 45%;
@@ -116,9 +116,6 @@ img.service-img {
     }
     footer{
         text-align: center;
-    }
-    .service-img{
-        width: 80px;
     }
     .service-card {
         width: 45%;
