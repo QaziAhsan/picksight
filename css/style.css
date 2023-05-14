@@ -57,9 +57,13 @@ img.arrow-bottom {
 }
 img.service-img {
     height: 200px;
+    object-fit: contain;
 }
 .service-card h3,.service-card p{
     line-height: 1.2;
+}
+.about-img{
+    width: 80%;
 }
 @media(max-width:1500px){
     img.arrow-bottom {
@@ -85,7 +89,7 @@ img.service-img {
 }
 @media(max-width:786px){
     .service-img{
-        width: 100px;
+        width: 150px;
     }
     .service-card {
         width: 45%;
@@ -96,6 +100,7 @@ img.service-img {
     .service-card h3,.service-card p{
         font-size: 20px;
     }
+    
 }
 
 
