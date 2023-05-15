@@ -13,6 +13,20 @@ h6 {
 .hiw-wrapper {
   position: relative;
 }
+.hiw-wrapper {
+    background: url(../img/hiw-bg1.png) center center no-repeat;
+    background-size: 100% 100% !important;
+    border-radius: 30px;
+}
+.hiw-wrapper.second{
+    background: url(../img/hiw-bg2.png) center center no-repeat;
+}
+.hiw-wrapper.third{
+    background: url(../img/hiw-bg3.png) center center no-repeat;
+}
+img.hiw-bg{
+    display: none;
+}
 img.hiw-bg {
   position: absolute;
   width: 100%;
@@ -110,6 +124,13 @@ img.arrow-bottom {
 .mobile-pic{
     bottom: 5px;
   }
+  .best-part-row img {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    bottom: 50%;
+    transform: translate(-20%,-50%);
+}
 @media (max-width: 1500px) {
   img.arrow-bottom {
     left: -5%;
@@ -131,7 +152,9 @@ img.arrow-bottom {
   .hiw-wrapper-main {
     text-align: center;
   }
- 
+  .mobile-pic{
+    bottom: 10px;
+  }
 
   .more-head {
     margin: 0px auto 0px !important;
@@ -143,6 +166,13 @@ img.arrow-bottom {
   .more-head .arrow-bottom.right {
     width: 150px;
   }
+}
+@media (max-width: 992px) {
+
+.best-part-row img {
+    position: unset;
+    transform: none;
+}
 }
 @media (max-width: 786px) {
   .service-img {
@@ -168,6 +198,9 @@ img.arrow-bottom {
   .best-part-row img{
     margin-top: 30px;
   }
+  footer {
+    text-align: center;
+  }
 }
 
 @media (max-width: 442px) {
@@ -180,9 +213,7 @@ img.arrow-bottom {
     right: -8%;
     bottom: -140px;
   }
-  footer {
-    text-align: center;
-  }
+ 
   .service-card {
     width: 45%;
     margin: 5px;

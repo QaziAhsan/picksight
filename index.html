@@ -449,14 +449,11 @@
         </div>
       </div>
       <div class="more-head-wrapper text-center my-8 lg:mb-16">
-        <div class="more-head my-8 lg:mb-16">
+        <div class="more-head my-8 lg:mb-16" data-aos="fade-up"
+        data-aos-duration="1500">
           <img src="img/arrow.png" class="arrow-bottom left" alt="" />
 
-          <h2
-            class="mb-4 text-2xl tracking-tight font-medium text-center uppercase md:text-5xl"
-            data-aos="fade-up"
-            data-aos-duration="1500"
-          >
+          <h2 class="mb-4 text-2xl tracking-tight font-medium text-center uppercase md:text-5xl" >
             And in more details...
           </h2>
           <img src="img/arrow-right.png" class="arrow-bottom right" alt="" />
@@ -527,7 +524,7 @@
         <img src="img/arrow-right.png" class="arrow-bottom right" alt="" />
       </div>
       <div
-        class="hiw-wrapper grid max-w-screen-xl px-14 py-14 mx-auto my-16 lg:gap-8 xl:gap-0 lg:grid-cols-12"
+        class="hiw-wrapper second grid max-w-screen-xl px-14 py-14 mx-auto my-16 lg:gap-8 xl:gap-0 lg:grid-cols-12"
       >
         <img src="img/hiw-bg2.png" class="hiw-bg" alt="" />
         <div
@@ -590,7 +587,7 @@
         <img src="img/arrow.png" class="arrow-bottom" alt="" />
       </div>
       <div
-        class="hiw-wrapper grid max-w-screen-xl px-14 py-14 mx-auto my-16 lg:gap-8 xl:gap-0 lg:grid-cols-12"
+        class="hiw-wrapper third grid max-w-screen-xl px-14 py-14 mx-auto my-16 lg:gap-8 xl:gap-0 lg:grid-cols-12"
       >
         <img src="img/hiw-bg3.png" class="hiw-bg" alt="" />
         <div
@@ -673,13 +670,13 @@
     </section>
 
     <footer class="my-20">
-      <div class="mx-auto w-full max-w-screen-xl">
+      <div class="mx-auto w-full max-w-screen-xl md:mx-auto">
         <div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
           <div>
-            <a href="#" class="flex items-center">
+            <a href="#" class="flex items-center justify-center md:justify-start">
               <img
                 src="img/logo.png"
-                class="mx-auto sm:mx-2 h-8 mr-3"
+                class="sm:mx-2 h-8 mr-3"
                 alt="Flowbite Logo"
               />
             </a>
@@ -833,6 +830,11 @@
       window.addEventListener("load", function () {
         AOS.init();
       });
+    </script>
+    <script>
+      if($('#popup-modal').attr("role","dialog")){
+        $("#modal-video iframe").attr("src", $("#modal-video iframe").attr("src"));
+      }
     </script>
   </body>
 </html>
