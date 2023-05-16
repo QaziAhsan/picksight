@@ -165,9 +165,6 @@
         <div class="relative bg-white rounded-lg shadow">
           <!-- Modal header -->
           <div class="flex items-start justify-between">
-            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-              Static modal
-            </h3>
             <button
               type="button"
               class="text-gray-400 bg-transparent text-sm p-1.5 ml-auto inline-flex items-center"
@@ -188,7 +185,7 @@
             </button>
           </div>
           <!-- Modal body -->
-          <div class="p-3 space-y-6">
+          <div class="p-3 space-y-6"  id="video-iframe">
             <iframe
               width="100%"
               height="315"
@@ -229,7 +226,7 @@
           >
             <a
               href="#"
-              class="inline-flex items-center text-white bg-blue-400 hover:bg-blue-500 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-md px-2 sm:px-5 dark:focus:ring-primary-900"
+              class="get-started-btn inline-flex items-center text-white bg-blue-400 hover:bg-blue-500 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-md px-2 sm:px-5 dark:focus:ring-primary-900"
             >
               Get started
               <svg
@@ -250,7 +247,7 @@
             <button
               data-modal-target="popup-modal"
               data-modal-toggle="popup-modal"
-              class="play-btn font-medium ml-5"
+              class="play-btn font-medium mx-5"
               type="button"
             >
               <img src="img/Play button.png" alt="" />
@@ -496,7 +493,7 @@
           </p>
           <a
             href="#"
-            class="inline-flex items-center text-white py-3 bg-red-400 hover:bg-red-500 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-md px-5 text-center dark:focus:ring-primary-900"
+            class="hiw-btn inline-flex items-center text-white py-3 bg-red-400 hover:bg-red-500 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-md px-5 text-center dark:focus:ring-primary-900"
           >
             Get started
             <svg
@@ -559,7 +556,7 @@
           </p>
           <a
             href="#"
-            class="inline-flex items-center text-white py-3 bg-red-400 hover:bg-red-500 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-md px-5 text-center dark:focus:ring-primary-900"
+            class="hiw-btn inline-flex items-center text-white py-3 bg-red-400 hover:bg-red-500 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-md px-5 text-center dark:focus:ring-primary-900"
           >
             Get started
             <svg
@@ -620,7 +617,7 @@
           </p>
           <a
             href="#"
-            class="inline-flex items-center text-white py-3 bg-red-400 hover:bg-red-500 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-md px-5 text-center dark:focus:ring-primary-900"
+            class="hiw-btn inline-flex items-center text-white py-3 bg-red-400 hover:bg-red-500 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-md px-5 text-center dark:focus:ring-primary-900"
           >
             Get started
             <svg
@@ -821,9 +818,9 @@
         </div>
       </div>
     </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
-    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script> -->
+   <script src="flowbite.js"></script>
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 
     <script>
@@ -831,10 +828,7 @@
         AOS.init();
       });
     </script>
-    <script>
-      if($('#popup-modal').attr("role","dialog")){
-        $("#modal-video iframe").attr("src", $("#modal-video iframe").attr("src"));
-      }
+    <script> 
     </script>
   </body>
 </html>

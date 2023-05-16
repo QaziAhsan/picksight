@@ -203,6 +203,15 @@ img.arrow-bottom {
   }
 }
 
+/*******RTL**********/
+
+html[dir="rtl"] .get-started-btn svg,html[dir="rtl"] .hiw-btn svg{
+  transform: rotate(175deg);
+  margin-right: 5px;
+}
+html[dir="rtl"] .text-left,html[dir="rtl"] .md\:text-left{
+text-align: right;
+}
 @media (max-width: 442px) {
   img.arrow-bottom {
     left: -5%;
